@@ -1,0 +1,1 @@
+py replay.py validate all expert -nomk -nv

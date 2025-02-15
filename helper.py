@@ -17,7 +17,7 @@ import copy
 import random
 from functools import reduce
 
-ahk = AHK()
+ahk = AHK(executable_path="K:\\Mods\\AHK\\v2\\AutoHotKey64.exe")
 
 pyautogui.FAILSAFE = False
 
@@ -45,6 +45,7 @@ def tupleToStr(tup):
 
 
 def cutImage(image, area):
+    print(f"Extracting region with coordinates: {area}")
     return np.array(image[area[1] : (area[3] + 1), area[0] : (area[2]) + 1])
 
 

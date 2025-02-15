@@ -1,0 +1,67 @@
+place sub sub0 at 2170, 426
+place dart dart0 at 1179, 615
+place dart dart1 at 1179, 493
+place obyn_greenfoot hero0 at 1701, 446
+place spike spike0 at 3045, 562
+upgrade spike0 path 2
+upgrade spike0 path 2
+upgrade spike0 path 1
+upgrade spike0 path 1
+upgrade spike0 path 2
+place druid druid0 at 1900, 446
+place druid druid1 at 1538, 443
+place druid druid2 at 1812, 388
+place druid druid3 at 1652, 382
+place druid druid4 at 2004, 392
+place druid druid5 at 1492, 379
+upgrade druid5 path 2
+upgrade druid5 path 2
+upgrade druid5 path 1
+upgrade druid1 path 2
+upgrade druid1 path 2
+upgrade druid1 path 1
+upgrade druid3 path 2
+upgrade druid3 path 2
+upgrade druid3 path 1
+upgrade druid2 path 2
+upgrade druid2 path 2
+upgrade druid2 path 1
+upgrade druid0 path 2
+upgrade druid0 path 2
+upgrade druid0 path 1
+upgrade druid4 path 2
+upgrade druid4 path 2
+upgrade druid4 path 1
+sell dart0
+sell dart1
+place alchemist alchemist0 at 1377, 417
+upgrade alchemist0 path 0
+upgrade alchemist0 path 0
+upgrade alchemist0 path 0
+upgrade alchemist0 path 1
+upgrade alchemist0 path 1
+place village village0 at 1708, 292
+upgrade village0 path 1
+upgrade village0 path 1
+upgrade druid1 path 2
+upgrade druid5 path 2
+upgrade druid3 path 2
+upgrade druid2 path 2
+upgrade druid0 path 2
+upgrade druid4 path 2
+upgrade village0 path 0
+upgrade village0 path 0
+upgrade druid5 path 2
+upgrade druid1 path 2
+upgrade druid3 path 2
+upgrade druid2 path 2
+upgrade druid0 path 2
+upgrade druid4 path 2
+upgrade alchemist0 path 0
+place alchemist alchemist1 at 2037, 322
+upgrade alchemist1 path 0
+upgrade alchemist1 path 0
+upgrade alchemist1 path 0
+upgrade alchemist1 path 0
+upgrade alchemist1 path 1
+upgrade alchemist1 path 1

@@ -4,6 +4,7 @@ from ocr import custom_ocr
 smallActionDelay = 0.05
 actionDelay = 0.2
 menuChangeDelay = 1
+superultrawideScalar = 1134 # between 900-1134
 
 def getResolutionDependentData(resolution = pyautogui.size(), gamemode=''):
     nativeResolution = (2560, 1440)
@@ -24,6 +25,12 @@ def getResolutionDependentData(resolution = pyautogui.size(), gamemode=''):
             'mana_lives': (89, 78, 185, 132),
             'money': (486, 25, 959, 90),
             'round': (1912, 39, 2080, 95),
+        },
+        "3840x1080": {
+            'lives': (superultrawideScalar+187, 32, superultrawideScalar+350, 84),
+            'mana_lives': (superultrawideScalar+89, 78, superultrawideScalar+185, 132),
+            'money': (superultrawideScalar+486, 25, superultrawideScalar+959, 90),
+            'round': (superultrawideScalar+1912, 39, superultrawideScalar+2080, 95),
         }
     }
 
@@ -1225,6 +1232,8 @@ def main():
                         ('game_playing_slow', comparisonImages['game_state']['game_playing_slow'], imageAreas["compare"]["game_state"]),
                         ('game_paused', comparisonImages['game_state']['game_paused'], imageAreas["compare"]["game_state"]),
                     ]:
+                        print(f"Screenshot Dimensions: {screenshot.shape}")
+                        print(f"Template Dimensions: {screenCfg[1].shape}") 
                         diff = cv2.matchTemplate(cutImage(screenshot, screenCfg[2]), cutImage(screenCfg[1], screenCfg[2]), cv2.TM_SQDIFF_NORMED)[0][0]
                         if bestMatchDiff is None or diff < bestMatchDiff:
                             bestMatchDiff = diff

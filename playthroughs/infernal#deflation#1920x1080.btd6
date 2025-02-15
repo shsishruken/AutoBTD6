@@ -1,0 +1,17 @@
+place village village0 at 1564, 647
+place sniper sniper0 at 1531, 532
+place alchemist alchemist0 at 1604, 518
+upgrade village0 path 0
+upgrade village0 path 0
+upgrade alchemist0 path 0
+upgrade alchemist0 path 0
+upgrade alchemist0 path 0
+upgrade alchemist0 path 0
+upgrade alchemist0 path 1
+upgrade alchemist0 path 1
+upgrade sniper0 path 2
+upgrade sniper0 path 2
+upgrade sniper0 path 2
+upgrade sniper0 path 2
+upgrade sniper0 path 1
+upgrade sniper0 path 1
