@@ -4,6 +4,7 @@ from ocr import custom_ocr
 smallActionDelay = 0.05
 actionDelay = 0.2
 menuChangeDelay = 1
+superultrawideScalar = 1134 # between 900-1134
 
 def getResolutionDependentData(resolution = pyautogui.size(), gamemode=''):
     requiredComparisonImages = [{'category': 'screens', 'name': 'startmenu'}, {'category': 'screens', 'name': 'map_selection'}, {'category': 'screens', 'name': 'difficulty_selection'}, {'category': 'screens', 'name': 'gamemode_selection'}, {'category': 'screens', 'name': 'hero_selection'}, {'category': 'screens', 'name': 'ingame'}, {'category': 'screens', 'name': 'ingame_paused'}, {'category': 'screens', 'name': 'victory_summary'}, {'category': 'screens', 'name': 'victory'}, {'category': 'screens', 'name': 'defeat'}, {'category': 'screens', 'name': 'overwrite_save'}, {'category': 'screens', 'name': 'levelup'}, {'category': 'screens', 'name': 'apopalypse_hint'}, {'category': 'screens', 'name': 'round_100_insta'}, {'category': 'game_state', 'name': 'game_paused'}, {'category': 'game_state', 'name': 'game_playing_slow'}, {'category': 'game_state', 'name': 'game_playing_fast'}]
@@ -1201,6 +1202,8 @@ def main():
                         ('game_playing_slow', comparisonImages['game_state']['game_playing_slow'], imageAreas["compare"]["game_state"]),
                         ('game_paused', comparisonImages['game_state']['game_paused'], imageAreas["compare"]["game_state"]),
                     ]:
+                        print(f"Screenshot Dimensions: {screenshot.shape}")
+                        print(f"Template Dimensions: {screenCfg[1].shape}") 
                         diff = cv2.matchTemplate(cutImage(screenshot, screenCfg[2]), cutImage(screenCfg[1], screenCfg[2]), cv2.TM_SQDIFF_NORMED)[0][0]
                         if bestMatchDiff is None or diff < bestMatchDiff:
                             bestMatchDiff = diff

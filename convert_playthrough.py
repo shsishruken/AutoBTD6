@@ -7,4 +7,4 @@ if len(sys.argv) < 3 or not re.search(r"\d+x\d+", sys.argv[2]):
 if convertBTD6InstructionsFile(sys.argv[1], [int(x) for x in sys.argv[2].split("x")]):
     print(sys.argv[1], "converted successfully!")
 else:
-    print("invalid filename or file not existing!")
+    print("invalid filename or file not existing!", sys.argv[1])

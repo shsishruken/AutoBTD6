@@ -1,5 +1,5 @@
 place sauda hero0 at 938, 604
-place buccaneer buccaneer0 at 1000, 864
+place buccaneer buccaneer0 at 1002, 865
 upgrade buccaneer0 path 1
 upgrade buccaneer0 path 1
 upgrade buccaneer0 path 0
